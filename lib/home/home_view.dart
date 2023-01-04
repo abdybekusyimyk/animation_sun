@@ -11,7 +11,7 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView> {
   bool isFullSun = false;
-  Duration duration = Duration(seconds: 3);
+  Duration duration = Duration(seconds: 2);
 
   @override
   void initState() {
@@ -33,9 +33,9 @@ class _HomeViewState extends State<HomeView> {
       });
     }
     // await Future<void>.delayed(duration);
-    setState(() {
-      isFullSun = true;
-    });
+    // setState(() {
+    //   isFullSun = true;
+    // });
   }
 
   @override
